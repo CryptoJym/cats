@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+    font-weight: normal;
+}
+
+.comparison-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between the cat and dog containers */
+    margin-top: 30px;
+}
+
+.image-container {
+    border: 2px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    width: 40%; /* Adjust width as needed */
+    max-width: 400px; /* Prevent containers from getting too large */
+    cursor: pointer; /* Indicate it's clickable */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.image-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-container h3 {
+    margin-top: 0;
+    color: #444;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Limit image height */
+    display: block; /* Remove extra space below image */
+    margin: 10px auto; /* Center image if container is wider */
+    border-radius: 4px;
+}
